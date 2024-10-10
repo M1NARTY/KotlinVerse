@@ -22,8 +22,8 @@ fun main(){
     squares.copyOf(5)
     var a = arrayOf(1, 4, 9, 16)
 //    a = arrayOf("one", "two")
-    val b = intArrayOf(1, 2, 3,) + 4
+    val b = intArrayOf(1, 2, 3) + 4
     val c = intArrayOf(1, 2, 3) + intArrayOf(5, 6)
     println(intArrayOf(1, 2, 3) == intArrayOf(1, 2, 3))
-    println(intArrayOf(1, 2, 3).contentEquals(intArrayOf(1, 2, 3,)))
+    println(intArrayOf(1, 2, 3).contentEquals(intArrayOf(1, 2, 3)))
 }
