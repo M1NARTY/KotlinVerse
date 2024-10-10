@@ -13,4 +13,17 @@ fun main(){
     squares.lastIndex
     squares[3]
     squares[1]
+    squares[2] = 100
+    squares[3] += 9
+    squares[0]--
+    val numbers = squares.copyOf()
+    numbers[0] = 1000
+    squares.copyOf(2)
+    squares.copyOf(5)
+    var a = arrayOf(1, 4, 9, 16)
+//    a = arrayOf("one", "two")
+    val b = intArrayOf(1, 2, 3,) + 4
+    val c = intArrayOf(1, 2, 3) + intArrayOf(5, 6)
+    println(intArrayOf(1, 2, 3) == intArrayOf(1, 2, 3))
+    println(intArrayOf(1, 2, 3).contentEquals(intArrayOf(1, 2, 3,)))
 }
