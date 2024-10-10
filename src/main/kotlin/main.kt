@@ -26,4 +26,8 @@ fun main(){
     val c = intArrayOf(1, 2, 3) + intArrayOf(5, 6)
     println(intArrayOf(1, 2, 3) == intArrayOf(1, 2, 3))
     println(intArrayOf(1, 2, 3).contentEquals(intArrayOf(1, 2, 3)))
+    intArrayOf(1,2).isEmpty() // false
+    intArrayOf(1, 2).isNotEmpty() // true
+    intArrayOf(1, 2, 3).indexOf(2) // 1
+    intArrayOf(1, 2, 3).indexOf(4) // -1
 }
