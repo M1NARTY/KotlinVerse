@@ -9,3 +9,4 @@ fun main() {
     val radius = readLine()!!.toDouble()
     println("Circle area: ${circleArea(radius)}")
 }
+// This function calculates the area of a circle given its radius. The main function takes user input for the radius and calls the circleArea function to calculate and print the area of the circle.
