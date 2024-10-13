@@ -28,6 +28,7 @@ fun rectangleArea(width: Double, height: Double): Double {
 fun main() {
     val w = readLine()!!.toDouble()
     val h = readLine()!!.toDouble()
+
     println("Rectangle area: ${rectangleArea(w, h)}")
     println("Rectangle area: ${rectangleArea(width = w, height = h)}")
     println("Rectangle area: ${rectangleArea(height = h, width = w)}")
