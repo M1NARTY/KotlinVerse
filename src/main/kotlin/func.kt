@@ -65,8 +65,6 @@
 //fun plus(a: String, b: String) = a + b
 //fun plus(a: String, b: String) = a.toInt() + b.toInt() // error: conflicting overloads: public final fun plus(a: String, b: String): String defined(이하 생략)
 
-import java.util.Arrays
-
 fun mul(a: Int, b: Int) = a*b               // 1
 fun mul(a: Int, b: Int, c: Int) = a*b*c     // 2
 fun mul(s: String, n: Int) = s.repeat(n)    // 3
@@ -76,7 +74,7 @@ fun main() {
     println(mul(1, 2))
 //    println(mul(1, 2L)) // error: none of the following functions can be called with the arguments supplied
                           // 오류: (Int, Long) 타입을 받을 수 있는 함수가 없음
-    println(Arrays.toString(mul(1L, 2))) // Long, Int 타입을 받을 수 있는 함수는 4번뿐이므로 4를 선택
+    println(mul(1L, 2).contentToString()) // Long, Int 타입을 받을 수 있는 함수는 4번뿐이므로 4를 선택
     println(mul("0", 3)) // String이 Any의 하위 타입이기 때문에 3과 4 중에 3을 선택
-    println(Arrays.toString(mul("0" as Any, 3))) // (Any, Int)를 받을 수 있는 함수는 4뿐이므로 4를 선택
+    println(mul("0" as Any, 3).contentToString()) // (Any, Int)를 받을 수 있는 함수는 4뿐이므로 4를 선택
 }
