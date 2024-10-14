@@ -4,10 +4,6 @@ fun printSorted(vararg items: Int) {
     println(items.contentToString())
 }
 
-//fun main() {
-
-//}
-
 fun change(vararg items: IntArray) {
     items[0][0] = 100
 }
