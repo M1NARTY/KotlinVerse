@@ -11,4 +11,8 @@ fun main() {
     println("zzz" in "abc".."xyz") // false
 
     val twoDigits = 10 until 100 // 10..99와 같음. 100은 포함되지 않음
+
+    println(5 in 10 downTo 1) // true
+    println(5 in 1 downTo 10) // false: 빈 진행임
+
 }
