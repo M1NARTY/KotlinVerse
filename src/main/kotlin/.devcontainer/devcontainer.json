@@ -1,0 +1,16 @@
+{
+    "name": "Kotlin Development",
+    "build": {
+      "dockerfile": "Dockerfile"
+    },
+    "extensions": [
+      "vscjava.vscode-java-pack",  // Java 관련 확장
+      "redhat.java",               // Java 확장
+      "jetbrains.kotlin"           // Kotlin 확장
+    ],
+    "settings": {
+      "java.home": "/usr/local/openjdk-11",
+      "kotlin.language.version": "1.9"
+    }
+  }
+  
