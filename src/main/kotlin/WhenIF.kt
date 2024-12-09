@@ -18,3 +18,10 @@ fun hexDigit3(n: Int) = when {
     else -> '?'
 }
 
+fun main() {
+    val n = 14
+    println(hexDigit3(n))
+    println(hexDigitWhen(n))
+    println(hexDigitIf(n))
+}
+
